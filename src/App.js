@@ -41,17 +41,20 @@ function App() {
       <div className="main"> 
         <div className="chats">
           <div className="chat">
-            <img src={userIcon} alt="" /><p className="txt">Ask a Question?</p>
+            <img className="chatImg" src={userIcon} alt="" /><p className="txt">Ask a Question?</p>
           </div>
-          <div className="chat">
-            <img src={gptImgLogo} alt="" /><p className="txt">Here is answer.</p>
+          <div className="chat bot">
+            <img className="chatImg" src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+           </p>
           </div>
 
         </div>
         <div className="chatFooter">
           <div className="inp">
-            <input type="text" placeholder="Send a message" name="" id=""/><button className="send"><img src={sendBtn} slt="Send"  /></button>
+            <input type="text" placeholder="Message GptEngine..." name="" id=""/><button className="send"><img src={sendBtn} alt="Send"  /></button>
           </div>
+          <p>GptEngine can make mistakes. Consider checking important information.</p>
         </div>
       </div>
 
